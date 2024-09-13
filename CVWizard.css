@@ -125,6 +125,7 @@ label {
 }
 
 select {
+    width: 160px;
     margin-top: 6px;
 }
 
