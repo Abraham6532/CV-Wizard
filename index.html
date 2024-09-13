@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CVWizard.css">
+    <title>CV Wizard</title>
+    <link rel="shortcut icon" href="Assets/Imagenes/IconoCVWizard.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <div class="contenedor--logotipo">
+            <div class="bg">
+                <img src="Assets/Imagenes/LogoCVWizard.png" alt="LogoCVWizard" width="70px">
+                <h1>CV Wizard</h1>
+            </div>
+            <div class="blob"></div>
+        </div>
+        <form action="" method="post">
+            
+            <h2>INFORMACION PERSONAL</h2>
+            <label for="Nombre">Nombre completo:</label>
+            <input type="text" name="texto" id="formNombre">
+            <br>
+            <label for="Puesto">Puesto:</label>
+            <input type="text" name="texto" id="formPuesto">
+            <br>
+            <label for="Correo">Correo:</label>
+            <input type="email" name="email" id="formCorreo">
+            <br>
+            <label for="Telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="formTelefono">
+            <br>
+            <label for="Estado">Estado:</label>
+            <input type="text" name="texto" id="formEstado">
+            <br>
+            <label for="GitHub">GitHub:</label>
+            <input type="text" name="link" id="formGitHub">
+            <br>
+            <label for="Linkedin">Linkedin:</label>
+            <input type="text" name="link" id="formLinkedin">
+            <br>
+            <input type="checkbox" name="checkboxTexto" id="formReubicacion" value="Disponibilidad a reubicación">
+            <label for="Reubicacion">Disponibilidad a reubicación</label>
+            <br>
+            <label for="Perfil">Perfil Profesional:</label>
+            <textarea name="prosa" id="formPerfilProfesional"></textarea>
+            <br>
+            <label for="HabilidadesTecnicas">Habilidades Tecnicas:</label>
+            <select name="tecnicas" id="formHabilidadesTecnicas"></select>
+            <br>
+            <label for="HabilidadesBlandas">Habilidades Blandas:</label>
+            <select name="blandas" id="formHabilidadesBlandas"></select>
+            <br>
+            
+            <h2>EXPERIENCIA LABORAL</h2>
+            <label for="Empresa">Empresa:</label>
+            <input type="text" name="texto" id="formEmpresa">
+            <br>
+            <label for="Periodo">Periodo:</label>
+            <input type="text" name="texto" id="formPeriodo">
+            <br>
+            <label for="Puesto">Puesto:</label>
+            <input type="text" name="texto" id="formPuestoExperiencia">
+            <br>
+            <label for="Experiencia">Experiencia Laboral:</label>
+            <textarea name="prosa" id="formExperienciaLaboral"></textarea>
+            <button type="button" id="ExperienciaProfesional">Agregar otra experiencia laboral</button>
+            
+            <h2>PROYECTOS ACADEMICOS</h2>
+            <label for="NombreProyecto">Nombre del proyecto:</label>
+            <input type="text" name="texto" id="formNombreProyecto">
+            <br>
+            <label for="PeriodoProyecto">Periodo del proyecto:</label>
+            <input type="text" name="texto" id="formPeriodoProyecto">
+            <br>
+            <label for="PuestoProyecto">Puesto en el proyecto:</label>
+            <input type="text" name="texto" id="formPuestoProyecto">
+            <br>
+            <label for="DescripcionProyecto">Descripcion del proyecto:</label>
+            <textarea name="prosa" id="formDescripcionProyecto"></textarea>
+            <button type="button" id="ProyectosAcademicos">Agregar otro proyecto</button>
+            
+            <h2>FORMACIÓN EDUCATIVA</h2>
+            <label for="Institucion">Institucion:</label>
+            <input type="text" name="texto" id="formInstitucion">
+            <br>
+            <label for="Lapso">Lapso:</label>
+            <input type="text" name="texto" id="formLapso">
+            <br>
+            <label for="Acreditación">Acreditación:</label>
+            <input type="text" name="texto" id="formAcreditación">
+            <br>
+            <label for="Descripcion">Descripcion:</label>
+            <textarea name="prosa" id="formDescripcion"></textarea>
+            <button type="button" id="FormacionEducativa">Agregar otra formacion educativa</button>
+            <h2>IDIOMAS</h2>
+            <textarea name="prosa" id="formIdiomas"></textarea>
+        </form>
+    </section>
+
+    <section class="hojaCV" id="cv">
+        <h1 id="cvNombre">Nombre completo</h1>
+        <h1 id="cvPuesto">Puesto a solicitar</h1>
+        <p class="contenedorInformacion">
+            <a href="#" id="cvCorreo">correo@dominio.com</a>&nbsp;|&nbsp;
+            <a href="#" id="cvTelefono" target="_blank">0123456789</a>&nbsp;|&nbsp;
+            <span id="cvEstado">Estado de México</span>&nbsp;|&nbsp;
+            <a href="#" id="cvGitHub" target="_blank">https://github.com/Usuario</a>&nbsp;|
+            <a href="#" id="cvLinkedin" target="_blank">https://www.linkedin.com/in/perfilProfesional</a>&nbsp;|&nbsp;
+            <span id="cvReubicacion">Sin posibilidad de reubicacion</span>
+        </p>
+        
+
+        <h2>PERFIL PROFESIONAL</h2>
+        <hr>
+        <p id="cvPerfilProfesional">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo deleniti aliquam
+            at nobis sequi ipsa voluptatem molestiae, quis magni nulla dignissimos officiis excepturi qui cupiditate
+            tenetur soluta aspernatur laborum alias.</p>
+        <h2>HABILIDADES</h2>
+        <hr>
+        <p id="cvHabilidadesTecnicas"><b>Tecnicas:</b></p>
+        <p id="cvHabilidadesBlandas"><b>Blandas:</b></p>
+        
+
+        <h2>EXPERIENCIA PROFESIONAL</h2>
+        <hr>
+        <div style="margin-bottom: 5px;" id="cvExperienciaProfesional">
+            <p class="item">
+                <span id="cvEmpresa">Empresa</span>
+                <span id="cvPeriodo">Enero 2024 - Mayo 2024</span>
+            </p>
+            <span class="item" id="cvPuestoExperiencia">Puesto</span>
+            <p class="contenedorExperiencia" id="cvExperienciaLaboral">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste corporis eum, beatae maiores libero
+                doloremque repellendus laudantium perspiciatis consequuntur mollitia voluptas possimus accusantium
+                aliquam delectus itaque. Nostrum sint distinctio molestiae.</p>
+        </div>
+        
+
+        <h2>PROYECTOS ACADEMICOS</h2>
+        <hr>
+        <div style="margin-bottom: 5px;" id="cvProyectosAcademicos">
+            <p class="item">
+                <span id="cvNombreProyecto">Nombre del proyecto</span>
+                <span id="cvPeriodoProyecto">Enero 2024 - Mayo 2024</span>
+            </p>
+            <span class="item" id="cvPuestoProyecto">Rol</span>
+            <p class="contenedorExperiencia" id="cvDescripcionProyecto">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste corporis eum, beatae maiores libero
+                doloremque repellendus laudantium perspiciatis consequuntur mollitia voluptas possimus accusantium
+                aliquam delectus itaque. Nostrum sint distinctio molestiae.</p>
+        </div>
+        
+
+        <h2>FORMACIÓN EDUCATIVA</h2>
+        <hr>
+        <div style="margin-bottom: 5px;" id="cvFormacionEducativa">
+            <p class="item">
+                <span id="cvInstitucion">Universidad</span>
+                <span id="cvLapso">2019 - 2023</span>
+            </p>
+            <span class="item" id="cvAcreditación">Titulo obtenido</span>
+            <p class="contenedorExperiencia" id="cvDescripcion">Descripcion de las habilidades obtenidas (opcional)</p>
+        </div>
+        
+
+        <h2>IDIOMAS</h2>
+        <hr>
+        <p id="cvIdiomas">• Inglés (B2)</p>
+    </section>
+    <section class="Instrucciones">
+        <h2>OBTENER MI CV</h2>
+        <br>
+        <p style="text-align: center;">Para obtener tu cv tienes que imprirlo desde el navegador con el atajo "CTRL + P"
+            y guardar como PDF</p>
+        <br>
+        <img src="./Assets/Imagenes/Guardar como PDF.jpg" alt="Imagen de guardar como PDF" width="200px">
+        <br>
+        <p style="text-align: center;">Si no puede visualizar el documento, seleccione "Más opciones de configuración" y
+            aplique las siguientes opciones:</p>
+        <br>
+        <img src="./Assets/Imagenes/Mas configuraciones.jpg" alt="Mas configuraciones" width="200px">
+        <br>
+        <p style="text-align: center;">Finalmente presione en la opcion (Guardar/Imprimir)</p>
+    </section>
+    <script src="CVWizard.js"></script>
+</body>
+
+</html>

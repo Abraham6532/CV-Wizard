@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    background-color: black;
+}
+
+.hojaCV {
+    background-color: white;
+    width: 21.59cm;
+    /* 816px */
+    height: 25cm;
+    /* 1056px */
+    padding: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+h1 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+form h1 {
+    color: #58bc82;
+}
+
+form h2 {
+    color: #58bc82;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 6px 0px 0px 0px;
+}
+
+
+hr {
+    background-color: black;
+    border: none;
+    height: 0.1px;
+    margin: 0;
+}
+
+a {
+    color: #0000FF;
+}
+
+form {
+    color: white;
+    margin-bottom: 20px;
+    width: 315px;
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    margin: 0;
+}
+
+#cvHabilidadesTecnicas,
+#cvHabilidadesBlandas {
+    justify-content: left;
+}
+
+textarea {
+    resize: none;
+    width: 97%;
+    font-size: 13px;
+    height: 16px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.contenedorInformacion {
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+}
+
+.item {
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 97%;
+    height: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #707070;
+    color: #efefef;
+    font-weight: bold;
+    border-radius: 3rem;
+}
+
+form {
+    background:
+        linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 13px 0px 10px 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #58bc82;
+}
+
+label {
+    color: #58bc82;
+}
+
+select {
+    margin-top: 6px;
+}
+
+.Instrucciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    color: white;
+}
+
+.contenedor--logotipo {
+    position: relative;
+    width: 325px;
+    height: 70px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .bg {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 315px;
+    height: 60px;
+    z-index: 2;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .blob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 325px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    form {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .contenedor--logotipo {
+        display: none;
+    }
+
+    .Instrucciones{
+        display: none;
+    }
+}
+
