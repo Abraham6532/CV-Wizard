@@ -9,6 +9,7 @@
     {"nombre":"JSON"},
     {"nombre":"PostgreSQL"},
     {"nombre":"Transact-SQL"},
+    {"nombre":"AWS"},
     {"nombre":"WordPress"},
     {"nombre":"C#"},
     {"nombre":"PHP"},
