@@ -2,6 +2,8 @@
     {"nombre":"SQL Server"},
     {"nombre":"Java 8 y 17"},
     {"nombre":"SCSS"},
+    {"nombre":"CI/CD"},
+    {"nombre":"DevOps"},
     {"nombre":"TypeScript"},
     {"nombre":"Docker"},
     {"nombre":"Angular 15"},
