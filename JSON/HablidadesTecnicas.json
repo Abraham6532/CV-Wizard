@@ -1,5 +1,7 @@
 [
     {"nombre":"Java 8 y 17"},
+    {"nombre":"JQuery"},
+    {"nombre":"JSON"},
     {"nombre":"Transact-SQL"},
     {"nombre":"C#"},
     {"nombre":"PHP"},
